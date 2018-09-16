@@ -3,7 +3,6 @@
     margin: 0 auto;
 }
 
-.header {
-    text-align: center;
-    border-bottom: outset black 2px;
+body {
+    display: flex;
 }
