@@ -1,8 +1,197 @@
 * {
     box-sizing: border-box;
-    margin: 0 auto;
+    font-family: 'Merriweather', serif;
 }
 
-body {
-    display: flex;
+form {
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
+    padding: 0 15px 10px;
 }
+
+textarea {
+    width: 100%;
+    padding-left: 15px;
+    border-style: none; 
+    background: lightgrey;
+}
+
+input {
+    margin-left: 2px;
+    background: #d3d3d3;
+}
+
+button {
+    margin-top: 1.25em;
+    color: white;
+    font-size: 1.25rem;
+    text-align: center;
+    width: 100%;
+    padding: 20px 40px;
+    border-radius:  5px;
+    background: #11ccc1;
+}
+
+button:hover {
+    background: magenta;
+    color: aqua;
+}
+
+fieldset {
+    color: #808080;
+}
+
+legend {
+    color: black;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    color: #808080;
+    font-style: italic; 
+}
+
+textarea:focus {
+    background: rgba(220,220,220 0.3);
+    transition-duration: 1s;
+}
+
+h1 {
+    margin: 0;
+    padding: 1em;
+}
+
+/* ----Class Selector---- */
+
+.container input {
+    height: 2.5em;
+    margin-bottom: 20px;
+    border-style: none;
+}
+
+.container label {
+    margin-bottom: 5px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.select {
+    margin-left: 2px;
+    background: #d3d3d3;
+}
+
+.line-1 {
+    border: solid 2px black;
+    margin-bottom: 2px;
+}
+
+.line-2 {
+    border: solid 1px black;
+}
+
+
+.line-3 {
+    border: solid 1px black;
+}
+
+.user-info,
+.newsletter {
+    border-style: none;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.newsletter p {
+    margin-left: 2px;
+}
+
+.newsletter label {
+    padding-left: 1em;
+}
+
+.newsletter input {
+    margin-left: 10px;
+    margin-bottom: 1em;
+}
+
+/* ----ID Selector---- */
+
+#title {
+    text-align: center;
+    margin-bottom: auto; 
+    background: rgb(38, 52, 66);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#contact-info,
+#newsletter-form {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+#contact-info {
+    border: red solid 2px;
+}
+
+#intro {
+    padding-top: 5px;
+    margin-top: 0;
+    text-align: center;
+}
+
+#intro p {
+    padding-bottom: 1.5em;
+}
+
+#intro p {
+    color: #808080;
+}
+
+#comment {
+    margin-top: 0.5em;
+}
+
+#state {
+    margin-bottom: 20px;
+    padding: 0.7em;
+    border-radius: 5px;
+    border-style: none;
+}
+
+#state:focus {
+    background-color: rgba(140, 122, 70, 0.3);
+    transition-duration: 2s;
+}
+
+#code {
+    width: 50%;
+}
+
+/* ---- Puesdo Class ---- */
+
+.container ::placeholder {
+    text-align: end;
+  }
+
+::placeholder {
+    padding-right: 10px;
+    font-style: italic;
+}
+
+input:focus {
+    background-color: rgba(102, 255, 0, 0.8);
+    border: 2px solid #0004ff;
+    transition-duration: 1s;
+  }
