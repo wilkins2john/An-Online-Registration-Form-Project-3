@@ -27,24 +27,24 @@
                 <hr class="line-2">
             
         <fieldset class="user-info">
-
-            <legend><span id="contact-info">Contact Information</span></legend>
+            
+            <legend><div id="contact-info">Contact Information</div></legend>
 
             <div class="flex container">
             <label class="col-left" for="name">Full Name</label>
             <input class="col-right" type="text" id="name" name="user_name" placeholder="Required">
 
-            <label class="col-left" for="mail">Email</label>
+            <label class="col-left" for="mail">Email Address</label>
             <input class="col-right" type="email" id="mail" name="user_mail" placeholder="Required">
 
             <label class="col-left" for="tel">Phone Number</label>
-            <input class="col-right" type="tel" id="tel" name="user_tel">
+            <input class="col-right" type="tel" id="tel" name="user_tel" placeholder="(xxx-xxx-xxxx)">
 
             <label class="col-left" for="street">Street Address</label>
-            <input class="col-right" type="text" id="street" name="user_street">
+            <input class="col-right" type="text" id="street" name="user_street" placeholder="Required">
 
             <label class="col-left" for="city">City</label>
-            <input class="col-right" type="text" id="city" name="user_city">
+            <input class="col-right" type="text" id="city" name="user_city" placeholder="Required">
 
             <label class="col-left" for="state">State</label>
             <select class="col-right select" id="state" name="user_state">
@@ -103,34 +103,41 @@
             </select>
 
             <label class="col-left" for="code">Zip Code</label>
-            <input class="col-right" type="text" id="code" name="user_code">
+            <input class="col-right" type="text" id="code" name="user_code" placeholder="Required">
         </div>
-        </fieldset>
-
+       </fieldset>
         <hr class="line-3">
 
-        <fieldset class="newsletter">
-                
-            <legend><span id="newsletter-form">Newsletter</span></legend>
+        
+            <fieldset class="newsletter"> 
+            <legend><div id="newsletter-form">Newsletter</div></legend>
             <p>Select the newsletter you would like to recieve</p>
-            
+            <li>
             <input type="checkbox" id="html_news" value="html_news" name="user_newsletter">
             <label for="html_news">HTML News</label>
-
+            </li>
+            <li>
             <input type="checkbox" id="css_news" value="css_news" name="user_newsletter">
             <label for="css_news">CSS News</label>
-
+            </li>
+            <li>
             <input type="checkbox" id="javascript_news" value="javascript_news" name="user_newsletter">
             <label for="javascript_news">Javascript News</label>
-
+            </li>
             <p>Newsletter format</p>
-            
-            <input type="radio" id="html" value="html" name="user_format"><label for="html">HTML</label>
+            <li>
+            <input type="radio" id="html" value="html" name="user_format">
+            <label for="html">HTML</label>
+            </li>
+            <li>
             <input type="radio" id="plain" value="plain" name="user_format"><label for="plain">Plain text</label>
-
+            </li>
+            <li>
             <label for="comment">Other topics you'd like to hear about</label>
             <textarea id="comment" name="user_comment" rows="8" cols="30"></textarea>
+            </li>
             <button type="submit">Sign Up</button>
+            </ul>
         </fieldset>
     </form>
     <footer>
