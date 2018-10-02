@@ -57,7 +57,7 @@ footer p {
 }
 
 textarea:focus {
-    background: rgba(220,220,220 0.3);
+    background-color: rgb(220,220,220);
     transition-duration: 1s;
 }
 
@@ -227,6 +227,4 @@ input:focus {
     #zipcode {
         width: 25%;
     }
-
-    
 }
